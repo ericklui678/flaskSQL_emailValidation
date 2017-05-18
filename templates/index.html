@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="{{  url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <form action="/process" method="post">
+                Email: <input type="text" name="email">
+                <input type="submit" name="submit">
+            </form>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  <p>{{message}}</p>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+        </div> <!-- wrapper -->
+    </body>
+</html>

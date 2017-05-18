@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper{
+    background-color: silver;
+    margin: auto;
+    width: 970px;
+    height: 500px;
+    font-family: sans-serif, serif;
+    font-weight: 100;
+}
